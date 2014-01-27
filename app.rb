@@ -8,7 +8,6 @@ class App < Sinatra::Base
   get "/say" do
     content_type :json
     data = { text: Saitho.say }
-    p Saitho.say
     data.to_json
   end
 end
